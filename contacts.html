@@ -6,7 +6,7 @@
     <title>Contacts</title>
 </head>
 <body>
-    
+    <h2>First Form</h2>
     <form>
         <fieldset>
             <legend>Choose your favourite monster</legend>
@@ -58,6 +58,8 @@
             <label for="consent">I agree to participate in further surveys.</label>
         </fieldset>
     </form>
+
+    <h2>Second Form</h2>
 
     <form>
         <fieldset>
@@ -118,9 +120,58 @@
         </fieldset>
     </form>
 
-    <!-- Padaryti užduotį nr. 6 namie-->
+    <h2>Third Form</h2>
 
-    <!-- Kartojimo užduotys -->
+    <form>
+        <fieldset>
+            <legend>Registration form</legend>
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" pattern="[a-z][0-9]"/><br/>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" minlength="7" maxlength="12" required/><br/>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" minlength="1"  pattern="[a-z]"/><br/>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" pattern="[a-z][0-9]"/><br/>
+
+            <label for="country">Country:</label>
+            <select>
+                <option value="UK">UK</option>
+                <option value="US">US</option>
+            </select>
+            <br/>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="number" id="zip" minlength="1"/><br/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required/><br/>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="male"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female"/>
+            <label for="male">Female</label>
+            <br/>
+
+            <label>Language:</label>
+            <label for="eng">English</label>
+            <input type="checkbox" id="eng" name="lang" value="english"/>
+            <label for="eng">Non English</label>
+            <input type="checkbox" id="non-eng" name="lang" value="non-english"/>
+            <br/>
+
+            <label for="about">About:</label>
+            <textarea id="about" rows="10" cols="50"></textarea>
+            <br/>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
     <h1>Kartojimo užduotys</h1>
     <!-- Nr. 1 -->
     <h2>List</h2>
@@ -254,6 +305,75 @@
 
     <!-- Nr. 4 -->
     <h2>Table</h2>
-    <!-- Uzbaigti -->
+    <table border="1">
+        <thead>
+            <th>Day/Period</th>
+            <th>I<br/>9:30-10:20</th>
+            <th>II<br/>10:20-11:10</th>
+            <th>III<br/>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br/>12:40-1:30</th>
+            <th>V<br/>1:30-2:20</th>
+            <th>VI<br/>2:20-3:10</th>
+            <th>VII<br/>3:10-4:00</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Eng</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <td rowspan="6">L<br/>U<br/>N<br/>C<br/>H</td>
+                <td colspan="3">LAB</td>
+                <td>Phy</td>
+            </tr>
+
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td>SPORTS</td>
+            </tr>
+
+            <tr>
+                <th>Wednesday</th>
+                <td>Mat</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LIBRARY</td>
+            </tr>
+
+            <tr>
+                <th>Thursday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+            </tr>
+
+            <tr>
+                <th>Friday</th>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <td>Eng</td>
+                <td>Phy</td>
+            </tr>
+
+            <tr>
+                <th>Saturday</th>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td colspan="3">SEMINAR</td>
+                <td>SPORTS</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
