@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Choose your favourite monster</legend>
+
+            <input type="radio" id="kraken" name="monster" value="kraken"/>
+            <label for="kraken">Kraken</label><br/>
+
+            <input type="radio" id="sasquatch" name="monster" value="sasquatch"/>
+            <label for="sasquatch">Sasquatch</label><br/>
+
+            <input type="radio" id="mothman" name="monster" value="mothman"/>
+            <label for="mothman">Mothman</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Leave your contact details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="contacts"/><br/>
+
+            <label for="phone">Phone number:</label>
+            <input type="number" id="phone" name="contacts"/><br/>
+
+            <input type="checkbox" id="promo" name="promo" value="yes"/>
+            <label for="promo">I'd like to receive promotional messages.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Customer survey</legend>
+
+            <label for="products">Choose a product</label>
+            <select name="products" id="products">
+                <option value=""> Please choose a product</option>
+                <option value="pancake-batter">Pre-made pancake batter</option>
+                <option value="pancake-ingredients">Pancake ingredients</option>
+                <option value="dog-food">Dog food</option>
+            </select>
+
+            <p>How satisfied are you with the product?</p>
+            <input type="radio" id="satisfaction" name="satisfaction" value="1"/>
+            <label for="rating">Not at all</label><br/>
+            <input type="radio" id="satisfaction" name="satisfaction" value="2"/>
+            <label for="rating">Somewhat</label><br/>
+            <input type="radio" id="satisfaction" name="satisfaction" value="3"/>
+            <label for="rating">Satisfied</label><br/>
+            <input type="radio" id="satisfaction" name="satisfaction" value="4"/>
+            <label for="rating">Very satisfied</label><br/>
+
+            <input type="checkbox" id="consent" name="consent" value="yes"/>
+            <label for="consent">I agree to participate in further surveys.</label>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Užsakymo forma</legend>
+
+            <label for="name">Vardas:</label>
+            <input type="text" id="name"/>
+            <br>
+
+            <label for="surname">Pavardė:</label>
+            <input type="text" id="surname"/>
+            <br/>
+
+            <label for="email">El. paštas:</label>
+            <input type="email" id="email"/>
+            <br/>
+
+            <label for="password">Slaptažodis:</label>
+            <input type="password" id="password"/>
+            <br/>
+
+            <fieldset>
+                <label for="street">Gatvė:</label>
+                <input type="text" id="street">
+                <br/>
+
+                <label for="house">Namo numeris:</label>
+                <input type="number" id="house">
+                <br/>
+
+                <label for="city">Miestas:</label>
+                <select name="city" id="city">
+                    <option value="">Pasirinkti</option>
+                    <option value="vilnius">Vilnius</option>
+                    <option value="kaunas">Kaunas</option>
+                    <option value="klaipeda">Klaipėda</option>
+                </select>
+            </fieldset>
+
+            <label>Apmokėjimo būdas:</label><br/>
+            <input type="radio" id="payment" name="payment" value="banku"/>
+            <label for="payment">Per el. bankininkystę</label<br/>
+            <input type="radio" id="payment" name="payment" value="grynais"/>
+            <label for="payment">Grynais</label><br/>
+
+            <label>Pasirinkite dovaną:</label><br>
+            <label for="sukos">Šukos</label>
+            <input type="checkbox" id="sukos" value="sukos"/><br/>
+            <label for="sampunas">Šampūnas</label>
+            <input type="checkbox" id="sampunas" value="sampunas"/><br/>
+            <label for="balzamas">Balzamas</label>
+            <input type="checkbox" id="balzamas" value="sampunas"/><br/>
+
+            <label for="komentarai">Komentarai, pastabos</label>
+            <input type="text" id="komentarai" disabled/>
+
+            <button type="submit">Užsakyti</button>
+        </fieldset>
+    </form>
+
+    <!-- Padaryti užduotį nr. 6 namie-->
+
+    <!-- Kartojimo užduotys -->
+    <h1>Kartojimo užduotys</h1>
+    <!-- Nr. 1 -->
+    <h2>List</h2>
+        <ol type="I">
+            <li>
+                <ol>
+                    List item 1
+                    <ol type="a">
+                        <li>Nested item 1.1</li>
+                        <li>Nested item 1.2</li>
+                    </ol>
+                </ol>   
+            </li>
+
+            <li>
+                <ol>
+                    List item 2
+                    <ol>
+                        <li>Nested item 2.1</li>
+                        <li>Nested item 2.2
+                            <ul>
+                                <li>Nested item 2.2.1</li>
+                                <li>Nested item 2.2.2
+                                    <ul>
+                                        <li>Nested item 2.2.2.1</li>
+                                        <li>Nested item 2.2.2.2</li>
+                                    </ul>
+                                </li>
+                                <li>Nested item 2.2.3</li>
+                            </ul>
+                        </li>
+                        <ol>Nested item 2.3</ol>
+                    </ol>
+                </ol>
+            </li>
+
+            <li>
+                <ol>
+                    List item 3
+                    <ul>
+                        <li>List item 3.1</li>
+                        <li>List item 3.2</li>
+                        <li>List item 3.3</li>
+                    </ul>
+                </ol>
+            </li>
+        </ol>
+
+    <!-- Nr. 2 -->
+    <h2>Form</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email"/>
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"/>
+        <br/>
+
+        <label for="confirm-password">Conform password:</label>
+        <input type="password" id="confirm-password"/>
+        <br/>
+
+        <label for="picture">Upload picture:</label>
+        <input type="file" id="picture"/>
+        <br/>
+
+        <label>Gender:</label><br/>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Female</label><br/>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Male</label><br/>
+
+        <label>Select country:</label>
+        <select>
+            <option value="">Choose</option>
+            <option value="estonia">Estonia</option>
+            <option value="latvia">Latvia</option>
+            <option value="lithuania">Lithuania</option>
+        </select>
+        <br/>
+
+        <label>Hobby:</label>
+        <input type="checkbox" id="cricket" name="hobby" value="cricket">
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="football" name="hobby" value="football">
+        <label for="football">Football</label>
+        <br/>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50">Write your address here</textarea>
+        <br/>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Nr. 3 -->
+    <h2>Form 2</h2>
+    <form>
+        <label for="vardas">Vardas</label><br/>
+        <input type="text" id="vardas"/><br/>
+
+        <label for="pavarde">Pavardė</label><br/>
+        <input type="text" id="pavarde"/><br/>
+
+        <label for="tel">Telefonas</label><br/>
+        <input type="tel" id="tel" pattern="+370[0-9]{8}"/><br/>
+
+        <label for="imone">Įmonės pavadinimas</label><br/>
+        <input type="text" id="imone"/><br/>
+
+        <label>Miestas</label><br/>
+        <select>
+            <option value="">--Pasirinkite--</option>
+            <option value="vilnius">Vilnius</option>
+            <option value="kaunas">Kaunas</option>
+        </select>
+        <br/>
+
+        <label for="adresas">Adresas</label><br>
+        <input type="text" id="adresas"/>
+        <br/>
+
+        <label for="pasto-kodas">Pašto kodas</label><br>
+        <input type="number" id="pasto-kodas"/>
+        <br/>
+
+        <button type="reset">Atšaukti</button>
+        <button type="submit">Išsaugoti pakeitimus</button>
+    </form>
+
+    <!-- Nr. 4 -->
+    <h2>Table</h2>
+    <!-- Uzbaigti -->
+</body>
+</html>
