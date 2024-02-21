@@ -1,0 +1,128 @@
+h2 {
+    color: darkslateblue;
+}
+
+.different-word {
+    color:blueviolet;
+    font-weight: bold;
+}
+
+.spalvotas-tekstas {
+    color: royalblue;
+}
+
+.bullet {
+    text-decoration: underline;
+}
+
+.bullet::marker {
+    color: red;
+}
+
+.table-head {
+    color: teal;
+}
+
+.table-side {
+    color: violet;
+}
+
+.button-one {
+    border: none
+}
+
+.button-two {
+    border: 3px dotted black;
+}
+
+.button-two:hover {
+    border: 3px groove pink;
+}
+
+.button-three {
+    border: 3px dashed black;
+}
+
+.button-three:hover {
+    border: 3px ridge pink;
+}
+
+.button-four {
+    border: 3px solid black;
+}
+
+.button-four:hover {
+    border: 3px inset pink;
+}
+
+.button-five {
+    border: 3px double black;
+}
+
+.button-five:hover {
+    border: 3px outset pink;
+}
+
+.container {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.kvadratas {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-radius: 30px;
+}
+
+.banguotas-kvadratas {
+    height: 100px;
+    width: 100px;
+    background-color: mediumaquamarine;
+    border-radius: 25% 10%;
+}
+
+.citrina {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 5px 60px;
+}
+
+.blob {
+    height: 100px;
+    width: 150px;
+    background-color: peachpuff;
+    border-radius: 3px 15px 70px 40px;
+}
+
+.image-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.image-one {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    background-image: url("https://www.thesprucepets.com/thmb/tOJ3vD-gHDlX2lPpgXLn3-aytU8=/1820x0/filters:no_upscale():strip_icc()/Akita-GettyImages-588622984-533e955df9214301a56b4c0689b32114-b756891eac2445059cbd59430dbff7e2.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 50%;
+}
+
+.akita-container {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    
+}
+
+.akita {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

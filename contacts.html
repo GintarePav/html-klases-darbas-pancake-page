@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <h2>First Form</h2>
@@ -44,7 +45,7 @@
                 <option value="dog-food">Dog food</option>
             </select>
 
-            <p>How satisfied are you with the product?</p>
+            <p>How <span class="different-word">satisfied</span> are you with the product?</p>
             <input type="radio" id="satisfaction" name="satisfaction" value="1"/>
             <label for="rating">Not at all</label><br/>
             <input type="radio" id="satisfaction" name="satisfaction" value="2"/>
@@ -82,15 +83,15 @@
             <br/>
 
             <fieldset>
-                <label for="street">Gatvė:</label>
+                <label for="street" class="spalvotas-tekstas">Gatvė:</label>
                 <input type="text" id="street">
                 <br/>
 
-                <label for="house">Namo numeris:</label>
+                <label for="house" class="spalvotas-tekstas">Namo numeris:</label>
                 <input type="number" id="house">
                 <br/>
 
-                <label for="city">Miestas:</label>
+                <label for="city" class="spalvotas-tekstas">Miestas:</label>
                 <select name="city" id="city">
                     <option value="">Pasirinkti</option>
                     <option value="vilnius">Vilnius</option>
@@ -193,17 +194,17 @@
                         <li>Nested item 2.1</li>
                         <li>Nested item 2.2
                             <ul>
-                                <li>Nested item 2.2.1</li>
-                                <li>Nested item 2.2.2
+                                <li class="bullet">Nested item 2.2.1</li>
+                                <li class="bullet">Nested item 2.2.2
                                     <ul>
-                                        <li>Nested item 2.2.2.1</li>
-                                        <li>Nested item 2.2.2.2</li>
+                                        <li class="bullet">Nested item 2.2.2.1</li>
+                                        <li class="bullet">Nested item 2.2.2.2</li>
                                     </ul>
                                 </li>
-                                <li>Nested item 2.2.3</li>
+                                <li class="bullet">Nested item 2.2.3</li>
                             </ul>
                         </li>
-                        <ol>Nested item 2.3</ol>
+                        <li>Nested item 2.3</li>
                     </ol>
                 </ol>
             </li>
@@ -212,9 +213,9 @@
                 <ol>
                     List item 3
                     <ul>
-                        <li>List item 3.1</li>
-                        <li>List item 3.2</li>
-                        <li>List item 3.3</li>
+                        <li class="bullet">List item 3.1</li>
+                        <li class="bullet">List item 3.2</li>
+                        <li class="bullet">List item 3.3</li>
                     </ul>
                 </ol>
             </li>
@@ -306,7 +307,7 @@
     <!-- Nr. 4 -->
     <h2>Table</h2>
     <table border="1">
-        <thead>
+        <thead class="table-head">
             <th>Day/Period</th>
             <th>I<br/>9:30-10:20</th>
             <th>II<br/>10:20-11:10</th>
@@ -320,7 +321,7 @@
 
         <tbody>
             <tr>
-                <th>Monday</th>
+                <th class="table-side">Monday</th>
                 <td>Eng</td>
                 <td>Mat</td>
                 <td>Che</td>
@@ -330,7 +331,7 @@
             </tr>
 
             <tr>
-                <th>Tuesday</th>
+                <th class="table-side">Tuesday</th>
                 <td colspan="3">LAB</td>
                 <td>Eng</td>
                 <td>Che</td>
@@ -339,7 +340,7 @@
             </tr>
 
             <tr>
-                <th>Wednesday</th>
+                <th class="table-side">Wednesday</th>
                 <td>Mat</td>
                 <td>Phy</td>
                 <td>Eng</td>
@@ -348,7 +349,7 @@
             </tr>
 
             <tr>
-                <th>Thursday</th>
+                <th class="table-side">Thursday</th>
                 <td>Phy</td>
                 <td>Eng</td>
                 <td>Che</td>
@@ -357,7 +358,7 @@
             </tr>
 
             <tr>
-                <th>Friday</th>
+                <th class="table-side">Friday</th>
                 <td colspan="3">LAB</td>
                 <td>Mat</td>
                 <td>Che</td>
@@ -366,7 +367,7 @@
             </tr>
 
             <tr>
-                <th>Saturday</th>
+                <th class="table-side">Saturday</th>
                 <td>Eng</td>
                 <td>Che</td>
                 <td>Mat</td>
@@ -375,5 +376,26 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>Borders</h2>
+    <button class="button-one">Button</button>
+    <button class="button-two">Button</button>
+    <button class="button-three">Button</button>
+    <button class="button-four">Button</button>
+    <button class="button-five">Button</button>
+
+    <div class="container">
+        <div class="kvadratas"></div>
+        <div class="banguotas-kvadratas"></div>
+        <div class="citrina"></div>
+        <div class="blob"></div>
+    </div>
+
+    <div class="image-container">
+        <div class="image-one"></div>
+        <div class="akita-container">
+            <img src="https://www.thesprucepets.com/thmb/tOJ3vD-gHDlX2lPpgXLn3-aytU8=/1820x0/filters:no_upscale():strip_icc()/Akita-GettyImages-588622984-533e955df9214301a56b4c0689b32114-b756891eac2445059cbd59430dbff7e2.jpeg" alt="big akita" class="akita"/>
+        </div>
+    </div>
 </body>
 </html>
