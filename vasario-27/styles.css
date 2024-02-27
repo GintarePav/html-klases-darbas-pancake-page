@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary-color: darkcyan;
+    height: calc(100vh - 80px;)
+}
+
+body {
+    height: 100%;
+}
+
+.lorem-paragraph {
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.lorem-paragraph::selection {
+    background-color: lightcyan;
+}
+
+.lorem-paragraph::first-line {
+    font-style: italic;
+}
+
+.first-letter {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.first-letter::selection {
+    background-color: lightcyan;
+}
+
+div {
+    width: 100px;
+    height: 300px;
+}
+
+.first-div {
+    background-color: var(--primary-color);
+    float: left;
+}
+
+.second-div {
+    background-color: cadetblue;
+    float: left;
+}
+
+.third-div {
+    background-color: paleturquoise;
+    float: left;
+}
+
+.fourth-div {
+    background-color: lightcyan;
+    clear: both;
+}
+
+.card {
+    margin: 20px;
+    height: 200px;
+    width: 350px;
+    border: 2px dashed darkslategray;
+    border-radius: 15px;
+}
+
+.image-placeholder {
+    height: 170px;
+    width: 140px;
+    border: 2px dashed darkslategray;
+    border-radius: 15px;
+    float: right;
+    background-color: lightcyan;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.placeholder-text {
+    font-style: italic;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.name-text {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.description-text {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.page {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 95%;
+    height: 500px;
+    border: 4px solid darkslategray;
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 10%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+}
+
+.first-aside {
+    width: 20%;
+    height: 50%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+    float: left;
+}
+
+.main {
+    width: 60%;
+    height: 50%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+    float: left;
+}
+
+.second-aside {
+    width: 20%;
+    height: 50%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 20%;
+    background-color: lightcyan;
+    border: 3px solid darkslategray;
+    clear: both;
+}
+
+.lorem-container {
+    width: 90%;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid darkslategray;
+}
+
+.span {
+    margin: 20px;
+    display: inline-block;
+    height: 30px;
+    width: 30%;
+    border: 2px solid darkslategray;
+    background-color: lightcyan;
+    position: relative;
+}
+
+.item {
+    height: 40px;
+    width: 40px;
+    border: 1px solid darkslategray;
+    border-radius: 100%;
+    background-color: darkslategray;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    opacity: 90%;
+}
+
+.item:hover {
+    transform: scale(2);
+    z-index: 1;
+}
+
+.overflow {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid darkslategray;
+    overflow: scroll;
+}
+
+
