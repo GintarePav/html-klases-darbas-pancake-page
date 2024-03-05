@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+.main-conteiner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-container {
+  width: 50%;
+  height: 100%;
+}
+
+.box-one {
+  width: 100%;
+  height: 33.3%;
+  background-color: rgb(95, 167, 95);
+  border: 3px solid white;
+}
+
+.big-box {
+  height: 66.6%;
+  width: 100%;
+  background-color: rgb(189, 238, 189);
+  border: 3px solid white;
+}
+.second-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box-two {
+  width: 50%;
+  height: 33.3%;
+  background-color: rgb(144, 238, 144);
+  border: 3px solid white;
+}
+.box-three {
+  width: 50%;
+  height: 33.3%;
+  background-color: rgb(189, 238, 189);
+  border: 3px solid white;
+}
+.box-four {
+  width: 50%;
+  height: 33.3%;
+  background-color: rgb(144, 238, 144);
+  border: 3px solid white;
+}
+.box-five {
+  width: 50%;
+  height: 33.3%;
+  background-color: rgb(95, 167, 95);
+  border: 3px solid white;
+}
+.single {
+  height: 33.3%;
+  width: 100%;
+  background-color: rgb(96, 138, 96);
+  border: 3px solid white;
+}
