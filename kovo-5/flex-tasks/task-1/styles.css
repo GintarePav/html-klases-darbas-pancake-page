@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p {
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    height: 10%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-ads-container {
+    height: 45%;
+    width: 100%;
+  }
+  .nav {
+    height: 50%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ads {
+    height: 50%;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid white;
+  }
+  .article-footer-container {
+    height: 45%;
+    width: 100%;
+  }
+  .article {
+    height: 80%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    height: 20%;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 426px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    height: 10%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-ads-container {
+    height: 90%;
+    width: 45%;
+    border-right: 5px solid white;
+  }
+  .nav {
+    height: 50%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ads {
+    height: 50%;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-footer-container {
+    height: 90%;
+    width: 55%;
+  }
+  .article {
+    height: 80%;
+    width: 100%;
+    background-color: darkslategray;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    height: 20%;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
