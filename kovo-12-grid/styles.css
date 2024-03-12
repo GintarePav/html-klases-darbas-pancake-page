@@ -154,3 +154,81 @@ h1 {
 }
 .task-three-twelve {
 }
+
+/* ANIMATION */
+
+.animation {
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: darkcyan;
+  animation: change-color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes change-color {
+  from {
+    transform: rotate(0deg);
+    opacity: 100%;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1%;
+  }
+    0% {
+    background-color: aqua;
+  }
+  20% {
+    background-color: aquamarine;
+  }
+  40% {
+    background-color: teal;
+  }
+  60% {
+    background-color: cyan;
+  }
+  80% {
+    background-color: cadetblue;
+  }
+  100% {
+    background-color: aqua;
+  } 
+}*/
+
+.animation-two {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 100%;
+  background-color: palevioletred;
+  top: 25%;
+  left: 25%;
+  animation: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes move {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 50%;
+  }
+}
+.button {
+  margin: 15px 30px;
+  transition: background-color 1s ease-in, transform 1s ease-in,
+    color 1s ease-in;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: white;
+  background-color: cornflowerblue;
+  transform: scale(2);
+}
