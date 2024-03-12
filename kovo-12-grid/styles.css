@@ -1,3 +1,156 @@
 h1 {
   color: darkslategray;
 }
+
+/* Task one */
+.one {
+  grid-area: one;
+  background-color: teal;
+}
+
+.two {
+  grid-area: two;
+  background-color: cadetblue;
+}
+
+.three {
+  grid-area: three;
+  background-color: lightcyan;
+}
+
+.four {
+  grid-area: four;
+  background-color: darkslategray;
+}
+
+.five {
+  grid-area: five;
+  background-color: aquamarine;
+}
+
+.six {
+  grid-area: six;
+  background-color: darkcyan;
+}
+
+.seven {
+  grid-area: seven;
+  background-color: darkturquoise;
+}
+
+.eight {
+  grid-area: eight;
+  background-color: darkslategray;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid darkslategray;
+  margin-bottom: 20px;
+  display: grid;
+  gap: 5px 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "one one one"
+    "two three four"
+    "two five five"
+    "six six seven"
+    "eight eight eight";
+}
+
+/* Task two */
+.task-two-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid darkslategray;
+  display: grid;
+  gap: 5px 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.task-two-one {
+  background-color: darkseagreen;
+  grid-area: 1/1/2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-two {
+  background-color: rgb(93, 122, 93);
+  grid-area: 2/1/4/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-three {
+  background-color: rgb(116, 204, 116);
+  grid-area: 2/2/4/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-four {
+  background-color: rgb(108, 125, 108);
+  grid-area: 2/3/4/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-five {
+  background-color: rgb(48, 96, 48);
+  grid-area: 4/1/4/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-six {
+  background-color: rgb(182, 222, 182);
+  grid-area: 4/2/4/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-seven {
+  background-color: rgb(68, 181, 68);
+  grid-area: 4/3/4/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-two-eight {
+  background-color: rgb(12, 73, 12);
+  grid-area: 5/1/5/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Task three, four and five >> HOMEWORK */
+.task-three-container {
+}
+.task-three-one {
+}
+.task-three-two {
+}
+.task-three-three {
+}
+.task-three-four {
+}
+.task-three-five {
+}
+.task-three-six {
+}
+.task-three-seven {
+}
+.task-three-eight {
+}
+.task-three-nine {
+}
+.task-three-ten {
+}
+.task-three-eleven {
+}
+.task-three-twelve {
+}
