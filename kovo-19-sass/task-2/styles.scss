@@ -1,0 +1,36 @@
+$feature-color: #6495ed;
+$feature-font: "calibri";
+
+@mixin featureText {
+    font-family: $feature-font;
+    color: $feature-color;
+}
+
+@mixin perfectCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@function to-rem($value) {
+    $rem: $value / 16 * 1rem;
+    @return $rem
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    @include perfectCenter;
+
+    &__a,
+    &__a:link,
+    &__a:visited,
+    &__a:active {
+        @include featureText;
+        font-size: to-rem(15);
+    }
+
+    &__a:hover {
+        color: aquamarine;
+    }
+}
