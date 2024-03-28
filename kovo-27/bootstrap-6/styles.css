@@ -1,0 +1,22 @@
+.nav {
+  height: 10%;
+  background-color: yellow;
+}
+
+.header {
+  height: 15%;
+  background-color: pink;
+}
+
+.sidebar-content {
+  height: 25%;
+}
+
+.aside-header {
+  height: 40%;
+}
+
+.footer {
+  height: 10%;
+  background-color: aquamarine;
+}
