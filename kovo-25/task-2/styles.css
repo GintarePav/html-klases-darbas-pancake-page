@@ -6,91 +6,122 @@
 .nav {
   width: 100%;
   height: 50px;
-  background-color: orange;
+  background-color: #ffa600;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.nav__list {
+  font-family: calibri, sans;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.631372549);
+  list-style: none;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0px;
+  position: absolute;
+  top: -276px;
 }
 .nav__menu {
   width: 50px;
   height: 100%;
   position: relative;
   margin-right: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+.nav__menu:hover + .nav__list {
+  animation: slide 3s ease-in-out;
+}
+.nav__menu:hover {
+  animation: rotate 3s ease-in-out;
+}
+.nav__menu:hover .nav__line-one {
+  animation: formX 3s ease-in-out forwards;
+}
+.nav__menu:hover .nav__line-two {
+  animation: disappear 3s forwards;
+}
+.nav__menu:hover .nav__line-three {
+  animation: formX2 3s ease-in-out forwards;
 }
 .nav__menu-line {
   width: 60%;
   height: 2px;
   border-radius: 2px;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   left: 10px;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 .nav__line-one {
   top: 20px;
 }
-.nav__line-one {
-  -webkit-animation-name: x;
-          animation-name: x;
-}
-@-webkit-keyframes x {
-  to {
-    transform: translateY(7px) translateY(-50%) rotate(-45deg);
-  }
-}
-@keyframes x {
-  to {
-    transform: translateY(7px) translateY(-50%) rotate(-45deg);
-  }
-}
 .nav__line-two {
   top: 26px;
-}
-.nav__line-two {
-  -webkit-animation-name: y;
-          animation-name: y;
-}
-@-webkit-keyframes y {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-@keyframes y {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
 }
 .nav__line-three {
   top: 32px;
 }
-.nav__line-three {
-  -webkit-animation-name: x-two;
-          animation-name: x-two;
-}
-@-webkit-keyframes x-two {
-  to {
-    transform: translateY(-7px) translateY(50%) rotate(45deg);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
-@keyframes x-two {
-  to {
-    transform: translateY(-7px) translateY(50%) rotate(45deg);
+@keyframes formX {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(7px) translateY(-50%) rotate(-45deg);
+  }
+  100% {
+    transform: none;
   }
 }
-
-.list {
-  list-style: none;
-  display: none;
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes formX2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-7px) translateY(50%) rotate(45deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes slide {
+  0% {
+    top: -276px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: -276px;
+  }
 }/*# sourceMappingURL=styles.css.map */
